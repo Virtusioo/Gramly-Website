@@ -71,7 +71,7 @@ function addMenuScripts() {
     addMenuListToggler();
 
     menuIcon.addEventListener("click", function() {
-        setPage("index.html");
+        setPage("html/index.html");
     })
     for (let i = 0; i < menuItems.length; i++) {
         let item = menuItems[i];

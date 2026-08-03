@@ -1,0 +1,277 @@
+
+/* format for creating new font face */
+/**
+    @font-face {
+        font-family: name goes here;
+        src: url goes here;
+    }
+*/
+
+@font-face {
+    font-family: Lexend;
+    src: url("../fonts/Lexend-Regular.ttf");
+}
+
+@font-face {
+    font-family: OpenDyslexic;
+    src: url("../fonts/OpenDyslexic-Regular.otf");
+}
+
+div.selection-bar {
+    background-color: rgba(66, 65, 65, 0.5);
+    height: 50px;
+    font-family: Lexend;
+    font-size: 30px; 
+    color: white;
+    font-weight: lighter;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+div.home-section {
+    padding-left: 12%; /* const left padding */
+    background-image: url("../images/pixel-art.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 130px;
+    padding-bottom: 90px;
+    image-rendering: crisp-edges;
+}
+
+div.menu-list-items {
+    background-color: rgb(45, 45, 45, .5);
+    backdrop-filter: blur(5px);
+    position: fixed;
+    right: 0px;
+    width: 275px;
+    height: auto;
+    margin-top: 90px;
+    border-radius: 0px 0px 16px 16px;
+    padding-left: 25px;
+    padding-bottom: 50px;
+    display: none;
+}
+
+span.menu-item {
+    font-family: Lexend;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    padding-right: 25px;
+    transition: 100ms ease-in-out;
+    cursor: pointer;
+}
+
+span.menu-item:hover {
+    color: rgb(200, 200, 200);
+}
+
+canvas#alice {
+    width: 96px;
+    height: 144px;
+    image-rendering: pixelated;
+    position: absolute;
+    margin-left: 48px;
+    margin-top: -25px;
+}
+
+div.landing-topbar {
+    background-color: rgb(45, 45, 45, .5);
+    backdrop-filter: blur(5px);
+    height: 50px;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    position: fixed;
+    z-index: 1000;
+}
+
+img.tts-button {
+    width: 37px;
+    height: 37px;
+    background-color: white;
+    border-radius: 5px;
+    transition: ease-in-out 100ms;
+    margin-left: 5px;
+}
+
+img.tts-button:hover {
+    background-color: rgb(200, 200, 200);
+}
+
+div.home-news {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+div.basic-footer {
+    padding-left: 12%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: rgba(66, 65, 65, 0.5);
+}
+
+div.basic-content {
+    padding-top: 100px;
+    text-align: center;
+}
+
+div.contact-content {
+    padding-left: 12%;
+    height: 100%;
+}
+
+div.features-section {
+    padding-top: 20px;
+    padding-bottom: 100px;
+    background-color: rgba(30, 30, 30);
+    text-align: center;
+}
+
+div.features-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+div.feature-card {
+    background-color: rgb(90, 90, 90);
+    border-radius: 12px;
+    padding: 25px;
+    flex: 1 1 220px;
+    max-width: 250px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+div.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+div.feature-card img {
+    width: 60px;
+    margin-bottom: 15px;
+}
+
+div.feature-card h3 {
+    margin-bottom: 10px;
+    color: white; /* Use your accent color */
+    font-family: Lexend;
+}
+
+div.feature-card p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    color: white;
+}
+
+span.buttons {
+    cursor: pointer;
+    padding: 15px;
+    transition: ease-in-out 100ms;
+}
+
+span.buttons:hover {
+    background-color: rgb(125, 125, 125, 0.5);
+}
+
+img#menu-list {
+    width: 60px;
+    height: 60px;
+    float: right;
+    margin-right: 70px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+img#menu-list:hover {
+    background-color: rgb(90, 90, 90);
+}
+
+img#menu-icon {
+    padding-left: 70px;
+    image-rendering: pixelated;
+    border-radius: 29px;
+    cursor: pointer;
+}
+
+p {
+    font-family: Lexend;
+    font-size: 35px;
+    color: white;
+}
+
+li {
+    font-family: Lexend;
+    font-size: 30px;
+    color: white;
+}
+
+a#test {
+    color: black;
+    background-color: aliceblue;
+    padding: 20px 20px 20px 20px;
+    border-radius: 16px;
+}
+
+a#test:hover {
+    background-color: rgb(200, 200, 200);
+}
+
+a {
+    font-family: Lexend;
+    text-decoration: none;
+    color: white;
+}
+
+span.opaque-bg {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+img.about-examples {
+    padding-left: 12%;
+}
+
+h1 {
+    font-family: Lexend;
+    font-size: 65px;
+    color: white;
+}
+
+h2 {
+    font-family: Lexend;
+    font-size: 40px;
+    color: white;
+}
+
+img.landing-button-icons {
+    padding-top: 15px;
+    width: 16px;
+    height: 16px;
+}
+
+body {
+    background-color: rgb(20, 20, 20);
+}
+
+button {
+    width: auto;
+    height: 70px;
+    font-family: Lexend;
+    font-size: 25px;
+    border-radius: 10px;
+    transition: ease-in-out 100ms;
+    padding-right: 16px;
+    padding-left: 16px;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(200, 200, 200);
+}

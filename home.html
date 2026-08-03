@@ -1,0 +1,122 @@
+<html>
+    <head>
+        <title>Adventutor Home</title>
+        <link rel="stylesheet" href="stylesheets/main.css">
+    </head>
+    <body>
+        <!-- Top bar -->
+        <div class="landing-topbar">
+            <img id="menu-icon" src="images/icon.png">
+            <img id="menu-list" src="images/menu-list-icon.png">
+        </div>
+
+        <!-- Side menu -->
+        <div class="menu-list-items">
+            <br><br>
+            <span class="menu-item" id="home"> Home </span> <img src="images/home-icon.png" width="32px"> 
+            <br>
+            <span class="menu-item" id="about"> About </span> <img src="images/question-icon.png" width="32px"> 
+            <br>
+            <span class="menu-item" id="solution"> Solution </span> <img src="images/solution-icon.png" width="32px"> 
+            <br>
+            <span class="menu-item" id="resources"> Resources </span> <img src="images/research-icon.png" width="32px"> 
+            <br>
+            <span class="menu-item" id="contact"> Contact </span> <img src="images/contact-icon.png" width="32px"> 
+        </div>
+
+        <!-- Hero / Welcome section -->
+        <div class="home-section">
+            <h1>
+                <span class="opaque-bg">
+                    Welcome to Adventutor
+                </span>
+            </h1>
+            <p>
+                <span class="opaque-bg">
+                    A gamified educational platform using interactive cards <br> 
+                    to make learning fun, visual, and immersive.
+                </span>
+            </p>
+            <canvas id="alice"></canvas>
+        </div>
+
+        <!-- Features / Card Types -->
+        <div class="features-section">
+            <h1>Innovative Card-Based System</h1>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <img src="images/interactive-card-icon.png" alt="Interactive Cards">
+                    <h3>Interactive Cards</h3>
+                    <p>
+                        These cards feature 3D versions of the images in wherein they can interact with the user.
+                    </p>
+                    <img src="images/play-icon.png" class="tts-button">
+                </div>
+                <div class="feature-card">
+                    <img src="images/puzzle-card-iconn.jpg" alt="Puzzle Cards">
+                    <h3>Puzzle Cards</h3>
+                    <p>
+                        These cards are minigames and puzzles that our user can solve or play to receive 
+                        various rewards like pets, and more customisation.
+                    </p>
+                    <img src="images/play-icon.png" class="tts-button">
+                </div>
+                <div class="feature-card">
+                    <img src="images/mythical-card-icon.jpg" alt="Mythical Cards">
+                    <h3>Mythical Cards</h3>
+                    <p>
+                        These are rare cards that may contain challenges that the users can complete that
+                        will give them rare pets. These cards are only one scan per card.
+                    </p>
+                    <img src="images/play-icon.png" class="tts-button">
+                </div>
+            </div>
+        </div>
+
+        <!-- Platform Details / Why Choose Us -->
+        <div class="home-news">
+            <h1>Why Adventutor?</h1>
+            <p>
+                Adventutor highly sympathizes with dyslexic learners <br>
+                or struggling individuals with their learning processes, <br>
+                making it globally accessible for most, especially dyslexics.
+                <img src="images/play-icon.png" class="tts-button">
+            </p>
+            <img src="images/Figure_1.png">
+            <br><br>
+            <a href="https://www.mdpi.com/2076-3425/12/10/1323"> https://www.mdpi.com/2076-3425/12/10/1323 </a>
+            <p>
+                Because of the problem above, Adventutor <br> specializes in 
+                visual learning which benefits both <br>
+                dyslexic and typical learners.
+                <img src="images/play-icon.png" class="tts-button">
+            </p>
+            <img src="images/Figure_2.png">
+            <br><br>
+            <a href="https://www.mdpi.com/2076-3425/12/10/1323"> https://www.jpeds.com/article/S0022-3476(15)00823-9/pdf </a>
+            <h1> Am I Dyslexic? </h1>
+            <p>
+                <a id="test" href="https://personalio.org/test/dyslexia_traits_quiz_flow_bingo?fbclid=42n_bing&question=6e143386-5c15-4d58-ab96-12de2e5db68f">
+                    Take the Test!
+                </a>
+            </p>
+        </div>
+
+        <hr>
+
+        <!-- Footer -->
+        <div class="basic-footer">
+            <p>
+                (C) STI LIPA 2025-2026 David Virtusio, Lance Bathan, and others.
+            </p>
+        </div>
+
+        <!-- Scripts -->
+        <script src="scripts/ui.js"></script>
+        <script>
+            addTTSPlayers();
+            addMenuScripts();
+            addParallaxEffect();
+        </script>
+    </body>
+</html>

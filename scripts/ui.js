@@ -71,12 +71,12 @@ function addMenuScripts() {
     addMenuListToggler();
 
     menuIcon.addEventListener("click", function() {
-        setPage("html/index.html");
+        setPage("index.html");
     })
     for (let i = 0; i < menuItems.length; i++) {
         let item = menuItems[i];
         item.addEventListener("click", function() {
-            setPage("html/" + this.id + ".html");
+            setPage(this.id + ".html");
         })
     }
 }

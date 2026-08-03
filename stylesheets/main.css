@@ -79,7 +79,7 @@ canvas#alice {
 div.landing-topbar {
     background-color: rgb(45, 45, 45, .5);
     backdrop-filter: blur(5px);
-    height: 50px;
+    height: 100px;
     width: 100%;
     left: 0px;
     top: 0px;
@@ -87,6 +87,11 @@ div.landing-topbar {
     padding-bottom: 30px;
     position: fixed;
     z-index: 1000;
+}
+
+div.landing-topbar img#menu-icon {
+    width: 128x;
+    height: 128px;
 }
 
 img.tts-button {

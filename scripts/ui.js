@@ -16,25 +16,7 @@ function addParallaxEffect() {
 }
 
 function addAliceWalking() {
-    let canvas = document.querySelector("canvas#alice");
-    let ctx = canvas.getContext("2d");
-    const img = document.getElementById("alice-sprite");
-    let frame = 0;
-    let ticks = 0;
-    let spinAnim = [0, 1, 3, 2]
-    ctx.imageSmoothingEnabled = false;
-    function draw() {
-        ctx.clearRect(0, 0, canvas.width, canvas.height)
-        // src pos then dest pos on canvas
-        if (ticks >= 25) {
-            frame = (frame + 1) % 4
-            ticks = 0;
-        }
-        ticks += 1;
-        ctx.drawImage(img, 0, 48*spinAnim[frame], 32, 48, 0, 0, canvas.width, canvas.height);
-        requestAnimationFrame(draw);
-    }
-    draw();
+    
 }
 
 function addTTSPlayers() {

@@ -9,12 +9,12 @@
 
 @font-face {
     font-family: Lexend;
-    src: url("fonts/Lexend-Regular.ttf");
+    src: url("../fonts/Lexend-Regular.ttf");
 }
 
 @font-face {
     font-family: OpenDyslexic;
-    src: url("fonts/OpenDyslexic-Regular.otf");
+    src: url("../fonts/OpenDyslexic-Regular.otf");
 }
 
 div.selection-bar {
@@ -31,7 +31,7 @@ div.selection-bar {
 
 div.home-section {
     padding-left: 12%; /* const left padding */
-    background-image: url("images/guuds.jpg");
+    background-image: url("../images/guuds.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 130px;
@@ -134,7 +134,7 @@ div.contact-content {
 
 div.features-section {
     padding-top: 20px;
-    background: url("images/wall.png");
+    background: url("../images/wall.png");
     text-align: center;
 }
 

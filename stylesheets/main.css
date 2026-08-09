@@ -40,25 +40,17 @@ div.home-section {
 }
 
 div.menu-list-items {
-    background-color: rgb(45, 45, 45, .5);
-    backdrop-filter: blur(5px);
-    position: fixed;
-    right: 0px;
-    width: 275px;
+    margin-left: 50px;
+    display: flex;
+    gap: 20px;
     height: auto;
-    margin-top: 90px;
-    border-radius: 0px 0px 16px 16px;
-    padding-left: 25px;
-    padding-bottom: 50px;
-    display: none;
 }
 
 span.menu-item {
     font-family: Lexend;
-    font-size: 40px;
+    font-size: 37px;
     font-weight: bold;
     color: white;
-    padding-right: 25px;
     transition: 100ms ease-in-out;
     cursor: pointer;
 }
@@ -86,6 +78,8 @@ div.landing-topbar {
     padding-top: 20px;
     padding-bottom: 30px;
     position: fixed;
+    display: flex;
+    align-items: center;
     z-index: 1000;
 }
 
@@ -186,8 +180,8 @@ span.buttons:hover {
 }
 
 img#menu-list {
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     float: right;
     margin-right: 70px;
     border-radius: 10px;
@@ -200,7 +194,6 @@ img#menu-list:hover {
 
 img#menu-icon {
     padding-left: 70px;
-    image-rendering: pixelated;
     border-radius: 29px;
     cursor: pointer;
 }

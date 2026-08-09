@@ -31,7 +31,7 @@ div.selection-bar {
 
 div.home-section {
     padding-left: 12%; /* const left padding */
-    background-image: url("../images/pixel-art.gif");
+    background-image: url("../images/guuds.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 130px;
@@ -83,6 +83,16 @@ div.landing-topbar {
     z-index: 1000;
 }
 
+div.download-section {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+img#gramly-laying-seductive {
+    height: 200px;
+}
+
 div.landing-topbar img#menu-icon {
     width: 128x;
     height: 128px;
@@ -103,7 +113,6 @@ img.tts-button:hover {
 
 div.home-news {
     text-align: center;
-    padding-bottom: 30px;
 }
 
 div.basic-footer {
@@ -125,8 +134,7 @@ div.contact-content {
 
 div.features-section {
     padding-top: 20px;
-    padding-bottom: 100px;
-    background-color: rgba(30, 30, 30);
+    background: url("../images/wall.png");
     text-align: center;
 }
 
@@ -145,6 +153,60 @@ div.feature-card {
     max-width: 250px;
     box-shadow: 0 6px 18px rgba(0,0,0,0.1);
     transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.features-section {
+    padding: 80px 10%;
+    color: black;
+}
+
+.features-section h1 {
+    text-align: center;
+    font-size: 65px;
+    margin-bottom: 60px;
+}
+
+.features-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+.features-item img {
+    width: 50%;
+    height: auto;
+}
+
+.features-list {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    max-width: 600px;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.feature-number {
+    font-size: 30px;
+    font-weight: bold;
+    min-width: 35px;
+    color: white;
+}
+
+.feature h2 {
+    margin: 0 0 8px;
+    font-size: 27px;
+}
+
+.feature p {
+    margin: 0;
+    font-size: 17px;
+    line-height: 1.5;
 }
 
 div.feature-card:hover {
@@ -248,9 +310,23 @@ h2 {
 }
 
 img.landing-button-icons {
-    padding-top: 15px;
-    width: 16px;
-    height: 16px;
+    width: 32px;
+    height: 32px;
+}
+
+div.download-section div.button-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: white;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+div.download-section div.button-item p {
+    color: black;
+    font-size: x-large;
 }
 
 body {

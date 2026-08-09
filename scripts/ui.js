@@ -51,17 +51,6 @@ function addTTSPlayers() {
 }
 
 function addMenuListToggler() {
-    let menuList = document.getElementById("menu-list");
-    let menuListContainer = document.querySelector("div.menu-list-items");
-
-    menuList.addEventListener("click", function() {
-        if (!menuShown) {
-            menuListContainer.style.display = "block";
-        } else {
-            menuListContainer.style.display = "none";
-        }
-        menuShown = !menuShown;
-    })
 
 }
 

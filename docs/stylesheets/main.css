@@ -170,11 +170,11 @@ div.feature-card {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 100px;
+    gap: 50px;
 }
 
 .features-item img {
-    width: 50%;
+    width: 60%;
     height: auto;
 }
 
@@ -322,12 +322,22 @@ div.download-section div.button-item {
     border-radius: 10px;
     padding-left: 10px;
     padding-right: 10px;
+    transition: ease-in-out 500ms;
 }
 
 div.download-section div.button-item p {
     color: black;
     font-size: x-large;
 }
+
+div.download-section div.button-item:hover {
+    background: greenyellow;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 13px;
+    padding-right: 13px;
+    cursor: pointer;
+} 
 
 body {
     background-color: rgb(20, 20, 20);

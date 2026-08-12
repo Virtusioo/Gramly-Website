@@ -52,6 +52,13 @@ function addMenuScripts() {
     }
 }
 
+function downloadGramlyApk() {
+    let a = document.createElement("a");
+    a.href = "resources/Gramly-Early-Release-V5.apk"
+    a.download = "Gramly.apk";
+    a.click();
+}
+
 for (let footer of document.getElementsByClassName("basic-footer")) {
     footer.getElementsByTagName("p")[0].innerHTML = "(C) STI COLLEGE LIPA 2026-2027. MAWD 202 - GROUP 4";
 }

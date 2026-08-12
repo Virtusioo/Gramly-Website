@@ -116,10 +116,10 @@ div.home-news {
 }
 
 div.basic-footer {
-    padding-left: 12%;
     padding-top: 50px;
     padding-bottom: 50px;
     background-color: rgba(66, 65, 65, 0.5);
+    text-align: center;
 }
 
 div.basic-content {
@@ -361,4 +361,14 @@ button {
 
 button:hover {
     background-color: rgb(200, 200, 200);
+}
+
+div.home-news img {
+    width: 50%;
+    border-radius: 20px;
+}
+
+div.basic-content img {
+    width: 50%;
+    border-radius: 20px;
 }

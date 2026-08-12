@@ -51,3 +51,7 @@ function addMenuScripts() {
         })
     }
 }
+
+for (let footer of document.getElementsByClassName("basic-footer")) {
+    footer.getElementsByTagName("p")[0].innerHTML = "(C) STI COLLEGE LIPA 2026-2027. MAWD 202 - GROUP 4";
+}

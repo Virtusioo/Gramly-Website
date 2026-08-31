@@ -314,6 +314,7 @@ h2 {
 img.landing-button-icons {
     width: 32px;
     height: 32px;
+    image-rendering: auto;
 }
 
 div.download-section div.button-item {
@@ -371,4 +372,20 @@ div.home-news img {
 div.basic-content img {
     width: 50%;
     border-radius: 20px;
+}
+
+div.steps {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.steps img.step {
+    width: 10%;
+    border-radius: 20px;
+}
+
+div.steps img.arrow {
+    height: 50px;
+    width: 50px;
 }

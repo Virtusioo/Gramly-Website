@@ -1,48 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gramly is a baking companion for accurate weight-based measurements, recipe creation, and sharing.">
+    <title>Gramly — Measure Baking the Right Way</title>
+    <link rel="stylesheet" href="stylesheets/main.css">
+    <link rel="icon" href="images/favicon.png">
+</head>
+<body>
+    <header class="landing-topbar">
+        <img id="menu-icon" src="images/gramly-icon.png" alt="Gramly logo">
+        <nav class="menu-list-items" aria-label="Main navigation">
+            <span class="menu-item" id="home"><img src="images/home-icon.png" alt="">Home</span>
+            <span class="menu-item" id="about"><img src="images/question-icon.png" alt="">About</span>
+            <span class="menu-item" id="solution"><img src="images/solution-icon.png" alt="">Solution</span>
+            <span class="menu-item" id="resources"><img src="images/research-icon.png" alt="">Resources</span>
+            <span class="menu-item" id="contact"><img src="images/contact-icon.png" alt="">Contact</span>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="home-section">
+            <div class="hero-content">
+                <p class="eyebrow">Baking, measured better</p>
+                <h1>Your reliable measuring app for baking.</h1>
+                <p>Measure it the right way with weight-based ingredient measurements designed for more accurate, consistent baking.</p>
 
-<html>
-    <head>
-        <title> Gramly </title>
-        <link rel="stylesheet" href="stylesheets/main.css">
-        <link rel="icon" href="images/favicon.png">
-    </head>
-    <body>
-        <div class="landing-topbar">
-            <img id="menu-icon" src="images/gramly-icon.png">
-            <div class="menu-list-items">
-                <span class="menu-item" id="home"> <img src="images/home-icon.png" width="32px"> Home  </span>
-                <span class="menu-item" id="about"> <img src="images/question-icon.png" width="32px"> About </span>
-                <span class="menu-item" id="solution"> <img src="images/solution-icon.png" width="32px"> Solution </span>
-                <span class="menu-item" id="resources"> <img src="images/research-icon.png" width="32px"> Resources </span> 
-                <span class="menu-item" id="contact"> <img src="images/contact-icon.png" width="32px"> Contact </span> 
-            </div>
-        </div>
-        <img id="alice-sprite" src="images/alice-sprite.png" style="display: none;">
-        <div class="home-section">
-            <h1> 
-                <span class="opaque-bg">
-                    Your free, reliable <br>
-                    measuring app for baking.
-                </span>
-            </h1>
-            <p> 
-                <span class="opaque-bg">
-                    Measure it the right way!
-                </span>
-            </p>
-            <br>
-            <div class="download-section">
-                <div class="button-item" onclick="downloadGramlyApk()">
-                    <p> Download The Android App </p>
-                    <img class="landing-button-icons" src="images/android-icon.png">
+                <div class="download-section">
+                    <div class="button-item" role="button" tabindex="0" onclick="downloadGramlyApk()" onkeydown="if(event.key==='Enter'||event.key===' ') downloadGramlyApk()">
+                        <p>Download the Android App</p>
+                        <img class="landing-button-icons" src="images/android-icon.png" alt="Android">
+                    </div>
+                    <img id="gramly-laying-seductive" src="images/gramly-laying-seductive.png" alt="Gramly mascot">
                 </div>
-                <img id="gramly-laying-seductive" src="images/gramly-laying-seductive.png">
             </div>
-        </div>
-        <div class="features-section">
-            <h1>What's special about Gramly?</h1>
+        </section>
+
+        <section class="features-section">
+            <p class="section-kicker">Made for everyday bakers</p>
+            <h1>What’s special about Gramly?</h1>
+            <p class="section-lead">A simpler way to build, measure, and share recipes without relying on inconsistent volume measurements.</p>
 
             <div class="features-item">
-                <img src="images/gramly-phone.png" alt="Gramly mobile application">
+                <img src="images/gramly-phone.png" alt="Gramly mobile application displayed on a phone">
 
                 <div class="features-list">
                     <div class="feature">
@@ -78,28 +79,23 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="home-news">
-            <h1> Why Choose Us? </h1>
-            <p> 
-                Gramly is a <b> mobile baking companion </b> that helps users <br> 
-                create, measure, and share recipes using accurate weight-based <br>
-                ingredient measurements for more consistent baking results.
-            </p>
-        </div>
-        <br><br>
-        <hr>
-        <div class="basic-footer">
-            <p>
-                (C) STI LIPA 2025-2026 David Virtusio, Lance Bathan, and others.
-            </p>
-        </div>
-        <script src="scripts/ui.js"> </script>
-        <script>
-            addMenuScripts();
-            addTTSPlayers();
-            addAliceWalking();
-            addParallaxEffect();
-        </script>
-    </body>
+        </section>
+
+        <section class="home-news">
+            <p class="section-kicker">Why Gramly</p>
+            <h1>A mobile baking companion built around consistency.</h1>
+            <p>Gramly helps users create, measure, and share recipes using accurate weight-based ingredient measurements for more consistent baking results.</p>
+        </section>
+    </main>
+
+    <footer class="basic-footer"><p>© STI COLLEGE LIPA 2026–2027 · MAWD 202 – GROUP 4 · GRAMLY</p></footer>
+
+    <script src="scripts/ui.js"></script>
+    <script>
+        addMenuScripts();
+        addTTSPlayers();
+        addAliceWalking();
+        addParallaxEffect();
+    </script>
+</body>
 </html>

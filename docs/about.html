@@ -1,66 +1,753 @@
-<html>
-    <head>
-        <title>Gramly About</title>
-        <link rel="stylesheet" href="stylesheets/main.css">
-        <link rel="icon" href="images/favicon.png">
-    </head>
-    <body>
-        <!-- Top bar -->
-        <div class="landing-topbar">
-            <img id="menu-icon" src="images/gramly-icon.png">
-            <div class="menu-list-items">
-                <span class="menu-item" id="home"> <img src="images/home-icon.png" width="32px"> Home  </span>
-                <span class="menu-item" id="about"> <img src="images/question-icon.png" width="32px"> About </span>
-                <span class="menu-item" id="solution"> <img src="images/solution-icon.png" width="32px"> Solution </span>
-                <span class="menu-item" id="resources"> <img src="images/research-icon.png" width="32px"> Resources </span> 
-                <span class="menu-item" id="contact"> <img src="images/contact-icon.png" width="32px"> Contact </span> 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Discover Gramly, a student-built baking companion for accurate weight-based measurements, recipe creation, scaling, and sharing."
+    >
+
+    <title>About Gramly — Measure Better. Bake Better.</title>
+
+    <link rel="stylesheet" href="stylesheets/main.css">
+    <link rel="icon" href="images/favicon.png">
+</head>
+
+
+<body class="about-page">
+
+    <!-- =====================================================
+         NAVIGATION
+         ===================================================== -->
+
+    <header class="landing-topbar">
+
+        <img
+            id="menu-icon"
+            src="images/gramly-icon.png"
+            alt="Gramly logo"
+        >
+
+                <nav class="menu-list-items" aria-label="Main navigation">
+
+            <span class="menu-item" id="home">
+                <img src="images/home-icon.png" alt="">
+                Home
+            </span>
+
+            <span class="menu-item" id="about">
+                <img src="images/question-icon.png" alt="">
+                About
+            </span>
+
+            <span class="menu-item" id="solution">
+                <img src="images/solution-icon.png" alt="">
+                Solution
+            </span>
+
+            <span class="menu-item" id="resources">
+                <img src="images/research-icon.png" alt="">
+                Resources
+            </span>
+
+            <!-- Keep contact ID for existing navigation routing -->
+            <span class="menu-item" id="contact">
+                <img src="images/try-icon.png" alt="">
+                Try Gramly
+            </span>
+
+        </nav>
+
+    </header>
+
+
+
+    <main>
+
+
+        <!-- =====================================================
+             ABOUT HERO
+             ===================================================== -->
+
+<!-- =====================================================
+     ABOUT INTRO — EDITORIAL STYLE
+     ===================================================== -->
+
+        <section class="about-intro">
+
+            <div class="about-intro-bg-text">
+                ABOUT
             </div>
-        </div>
 
-        <div class="basic-content">
-            <br><br>
-            <h1>About Gramly</h1>
-            <p>
-                Gramly was <b> created by 7 passionate high-school students </b> <br>
-                who wanted to make baking more accurate, consistent, <br>
-                and accessible. It helps users create and manage recipes <br>
-                using weight-based measurements, ingredient ratios, <br>
-                and baking calculations.
-            </p>
+            <div class="about-intro-inner">
 
-            <h1>Fun Facts</h1>
-            <p>
-                Gramly started as a <b> high-school research project </b> <br>
-                focused on improving measurement accuracy in baking.
-            </p>
+                <!-- LEFT SIDE -->
+                <div class="about-intro-heading">
 
-            <p>
-                Gramly uses <b> weight-based measurements </b> to reduce <br>
-                inconsistencies caused by differences in ingredient <br>
-                density, packing, and measuring techniques.
-            </p>
+                    <p class="about-intro-label">
+                        THE STORY BEHIND GRAMLY
+                    </p>
 
-            <p>
-                Gramly supports <b> Baker's Percentage, </b> making it easier <br>
-                to understand ingredient ratios and scale recipes <br>
-                accurately.
-            </p>
-        </div>
+                    <h1>
+                        We wanted baking
+                        <em>to make more sense.</em>
+                    </h1>
 
-        <hr>
+                </div>
 
-        <!-- Footer -->
-        <div class="basic-footer">
-            <p>
-                (C) STI LIPA 2025-2026 David Virtusio, Lance Bathan, and others.
-            </p>
-        </div>
 
-        <!-- Scripts -->
-        <script src="scripts/ui.js"></script>
-        <script>
-            addTTSPlayers();
-            addMenuScripts();
-        </script>
-    </body>
+                <!-- RIGHT SIDE -->
+                <div class="about-intro-copy">
+
+                    <span class="about-intro-number">
+                        01 / ABOUT
+                    </span>
+
+                    <p class="about-intro-lead">
+                        Gramly began with a simple question:
+                        <strong>
+                            how can bakers measure recipes more accurately
+                            without making the process complicated?
+                        </strong>
+                    </p>
+
+                    <p>
+                        Created by seven high-school students, Gramly explores
+                        a more dependable approach to baking through
+                        weight-based measurement, ingredient ratios,
+                        recipe organization, and Baker's Percentage.
+                    </p>
+
+                    <div class="about-intro-line"></div>
+
+                    <p class="about-intro-small">
+                        A student research project developed for bakers,
+                        learners, enthusiasts, and anyone who wants more
+                        consistency in every recipe.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- PROJECT FACTS -->
+            <div class="about-facts">
+
+                <article class="about-fact">
+                    <span>01</span>
+                    <strong>7</strong>
+                    <p>Student Creators</p>
+                </article>
+
+                <article class="about-fact">
+                    <span>02</span>
+                    <strong>4</strong>
+                    <p>Core Features</p>
+                </article>
+
+                <article class="about-fact">
+                    <span>03</span>
+                    <strong>100%</strong>
+                    <p>Built Around Baking</p>
+                </article>
+
+                <article class="about-fact about-fact-highlight">
+                    <span>04</span>
+                    <strong>Gramly</strong>
+                    <p>Measure Better. Bake Better.</p>
+                </article>
+
+            </div>
+
+
+            <!-- SCROLL INDICATOR -->
+            <div class="about-scroll-hint">
+                <span></span>
+                Continue to discover Gramly
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             WHAT'S SPECIAL ABOUT GRAMLY
+             ===================================================== -->
+
+        <section class="about-features-section">
+
+            <div class="about-section-heading">
+
+                <p class="about-section-kicker">
+                    MADE FOR EVERYDAY BAKERS
+                </p>
+
+                <h2>
+                    What’s special about
+                    <span>Gramly?</span>
+                </h2>
+
+                <p>
+                    A simpler way to build, measure, and share recipes
+                    without relying on inconsistent volume measurements.
+                </p>
+
+            </div>
+
+
+            <div class="about-feature-showcase">
+
+
+                <!-- PHONE -->
+
+                <div class="about-feature-phone">
+
+                    <div class="phone-background-number">
+                        04
+                    </div>
+
+                    <img
+                        src="images/gramly-phone.png"
+                        alt="Gramly mobile application displayed on a phone"
+                    >
+
+                </div>
+
+
+
+                <!-- FEATURE LIST -->
+
+                <div class="about-feature-list">
+
+
+                    <article class="about-feature-row">
+
+                        <span class="about-feature-number">
+                            01
+                        </span>
+
+                        <div class="about-feature-icon">
+
+                            <img
+                                src="images/weight-icon.png"
+                                alt=""
+                            >
+
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Weight-Based Measurement
+                            </h3>
+
+                            <p>
+                                Measure ingredients accurately using
+                                weight-based units for more dependable
+                                baking results.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <article class="about-feature-row">
+
+                        <span class="about-feature-number">
+                            02
+                        </span>
+
+                        <div class="about-feature-icon">
+
+                            <img
+                                src="images/ingredient-icon.png"
+                                alt=""
+                            >
+
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Huge Ingredient Database
+                            </h3>
+
+                            <p>
+                                Access useful ingredient information
+                                while preparing and organizing your
+                                baking recipes.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <article class="about-feature-row">
+
+                        <span class="about-feature-number">
+                            03
+                        </span>
+
+                        <div class="about-feature-icon">
+
+                            <img
+                                src="images/recipe-icon.png"
+                                alt=""
+                            >
+
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Recipe Creation
+                            </h3>
+
+                            <p>
+                                Create and customize recipes while
+                                keeping every ingredient measurement
+                                organized.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <article class="about-feature-row">
+
+                        <span class="about-feature-number">
+                            04
+                        </span>
+
+                        <div class="about-feature-icon">
+
+                            <img
+                                src="images/publish-icon.png"
+                                alt=""
+                            >
+
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Recipe Publishing
+                            </h3>
+
+                            <p>
+                                Share your recipes with other Gramly
+                                users and discover creations from the
+                                community.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             CORE TOOLKIT
+             ===================================================== -->
+
+        <section class="about-toolkit-section">
+
+            <div class="about-section-heading light-heading">
+
+                <p class="about-section-kicker">
+                    CORE TOOLKIT
+                </p>
+
+                <h2>
+                    Built around the way
+                    <span>bakers work.</span>
+                </h2>
+
+                <p>
+                    Gramly brings the important parts of recipe
+                    measurement and management together in one
+                    simple platform.
+                </p>
+
+            </div>
+
+
+
+            <div class="about-toolkit-grid">
+
+
+                <article class="about-toolkit-card">
+
+                    <span class="toolkit-card-number">
+                        01
+                    </span>
+
+                    <div class="toolkit-icon">
+
+                        <img
+                            src="images/weight-icon.png"
+                            alt="Weight-Based Measurement"
+                        >
+
+                    </div>
+
+                    <h3>
+                        Weight-Based Measurement
+                    </h3>
+
+                    <p>
+                        Measure baking ingredients using weight-based
+                        units for more accurate and repeatable results.
+                    </p>
+
+                </article>
+
+
+
+                <article class="about-toolkit-card">
+
+                    <span class="toolkit-card-number">
+                        02
+                    </span>
+
+                    <div class="toolkit-icon">
+
+                        <img
+                            src="images/ingredient-icon.png"
+                            alt="Ingredient Database"
+                        >
+
+                    </div>
+
+                    <h3>
+                        Ingredient Database
+                    </h3>
+
+                    <p>
+                        Keep useful ingredient information close at
+                        hand while planning and organizing recipes.
+                    </p>
+
+                </article>
+
+
+
+                <article class="about-toolkit-card">
+
+                    <span class="toolkit-card-number">
+                        03
+                    </span>
+
+                    <div class="toolkit-icon">
+
+                        <img
+                            src="images/recipe-icon.png"
+                            alt="Recipe Creation"
+                        >
+
+                    </div>
+
+                    <h3>
+                        Recipe Creation
+                    </h3>
+
+                    <p>
+                        Build customized recipes while keeping
+                        measurements structured and easy to follow.
+                    </p>
+
+                </article>
+
+
+
+                <article class="about-toolkit-card">
+
+                    <span class="toolkit-card-number">
+                        04
+                    </span>
+
+                    <div class="toolkit-icon">
+
+                        <img
+                            src="images/publish-icon.png"
+                            alt="Recipe Publishing"
+                        >
+
+                    </div>
+
+                    <h3>
+                        Recipe Publishing
+                    </h3>
+
+                    <p>
+                        Share your baking ideas and explore recipes
+                        created by other members of the community.
+                    </p>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             OUR STORY
+             ===================================================== -->
+
+        <section class="about-story-section">
+
+            <div class="about-story-intro">
+
+                <div>
+
+                    <p class="about-section-kicker">
+                        OUR STORY
+                    </p>
+
+                    <h2>
+                        Created by students.<br>
+                        <span>Designed for bakers.</span>
+                    </h2>
+
+                </div>
+
+
+                <p class="story-lead">
+                    Gramly was <strong>created by seven passionate
+                    high-school students</strong> who wanted to make
+                    baking more accurate, consistent, and accessible.
+                    What began as a research project grew into a
+                    practical baking companion.
+                </p>
+
+            </div>
+
+
+
+            <div class="about-story-grid">
+
+
+                <article class="about-story-card">
+
+                    <div class="story-icon">
+                        🥐
+                    </div>
+
+                    <p class="story-number">
+                        01
+                    </p>
+
+                    <h3>
+                        Research Project
+                    </h3>
+
+                    <p>
+                        Gramly started as a high-school research project
+                        focused on improving measurement accuracy in
+                        baking.
+                    </p>
+
+                </article>
+
+
+
+                <article class="about-story-card featured-story-card">
+
+                    <div class="story-icon">
+                        ⚖️
+                    </div>
+
+                    <p class="story-number">
+                        02
+                    </p>
+
+                    <h3>
+                        Weight First
+                    </h3>
+
+                    <p>
+                        Weight-based measurements help reduce
+                        inconsistencies caused by ingredient density,
+                        packing, and different measuring techniques.
+                    </p>
+
+                </article>
+
+
+
+                <article class="about-story-card">
+
+                    <div class="story-icon percentage-icon">
+                        %
+                    </div>
+
+                    <p class="story-number">
+                        03
+                    </p>
+
+                    <h3>
+                        Baker’s Percentage
+                    </h3>
+
+                    <p>
+                        Gramly supports Baker’s Percentage, making
+                        ingredient ratios easier to understand and
+                        recipes easier to scale accurately.
+                    </p>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             WHY CREATE GRAMLY
+             ===================================================== -->
+
+        <section class="about-purpose-section">
+
+            <div class="purpose-background-text">
+                GRAMLY
+            </div>
+
+
+            <div class="about-purpose-content">
+
+                <p class="about-section-kicker">
+                    BUILT WITH PURPOSE
+                </p>
+
+                <h2>
+                    Why create
+                    <span>Gramly?</span>
+                </h2>
+
+
+                <p class="purpose-description">
+                    Because baking depends on precision.
+                </p>
+
+
+                <div class="purpose-quote-wrapper">
+
+                    <img
+                        src="images/gisslen-quote.png"
+                        alt="Reference quote about baking measurement"
+                    >
+
+                </div>
+
+
+                <p class="purpose-copy">
+                    Gramly supports bakers in creating more accurate
+                    and consistent recipes by making ingredient
+                    measurements easier and more precise, helping
+                    bakers achieve better results with every bake.
+                </p>
+
+
+                <a
+                    class="purpose-source"
+                    href="https://app.ckbk.com/section/prof83497c02s001ss001sss002"
+                    target="_blank"
+                    rel="noopener"
+                >
+                    Gisslen, W. (2008)
+                    <span>↗</span>
+                </a>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             FINAL CTA
+             ===================================================== -->
+
+        <section class="about-final-cta">
+
+            <div>
+
+                <p class="about-section-kicker">
+                    DISCOVER GRAMLY
+                </p>
+
+                <h2>
+                    Better measurements.<br>
+                    <span>Better baking.</span>
+                </h2>
+
+                <p>
+                    See how Gramly approaches accuracy,
+                    consistency, and recipe measurement.
+                </p>
+
+            </div>
+
+
+            <button
+                class="about-cta-button"
+                onclick="window.location.href='solution.html'"
+            >
+                Explore Our Solution
+                <span>→</span>
+            </button>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =====================================================
+         FOOTER
+         ===================================================== -->
+
+    <footer class="basic-footer">
+
+        <p>
+            © STI COLLEGE LIPA 2026–2027 ·
+            MAWD 202 – GROUP 4 · GRAMLY
+        </p>
+
+    </footer>
+
+
+
+    <script src="scripts/ui.js"></script>
+
+    <script>
+        addMenuScripts();
+        addTTSPlayers();
+    </script>
+
+</body>
+
 </html>

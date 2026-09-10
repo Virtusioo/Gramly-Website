@@ -1,49 +1,813 @@
-<html>
-    <head>
-        <title>Gramly Solution</title>
-        <link rel="stylesheet" href="stylesheets/main.css">
-        <link rel="icon" href="images/favicon.png">
-    </head>
-    <body>
-        <!-- Top bar -->
-        <div class="landing-topbar">
-            <img id="menu-icon" src="images/gramly-icon.png">
-            <div class="menu-list-items">
-                <span class="menu-item" id="home"> <img src="images/home-icon.png" width="32px"> Home  </span>
-                <span class="menu-item" id="about"> <img src="images/question-icon.png" width="32px"> About </span>
-                <span class="menu-item" id="solution"> <img src="images/solution-icon.png" width="32px"> Solution </span>
-                <span class="menu-item" id="resources"> <img src="images/research-icon.png" width="32px"> Resources </span> 
-                <span class="menu-item" id="contact"> <img src="images/contact-icon.png" width="32px"> Contact </span> 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Try Gramly's interactive baking measurement and Baker's Percentage calculator."
+    >
+
+    <title>Try Gramly — Interactive Demo</title>
+
+    <link rel="stylesheet" href="stylesheets/main.css">
+    <link rel="icon" href="images/favicon.png">
+</head>
+
+
+<body class="try-page">
+
+    <!-- NAVIGATION -->
+
+    <header class="landing-topbar">
+
+        <img
+            id="menu-icon"
+            src="images/gramly-icon.png"
+            alt="Gramly logo"
+        >
+
+        <nav class="menu-list-items" aria-label="Main navigation">
+
+            <span class="menu-item" id="home">
+                <img src="images/home-icon.png" alt="">
+                Home
+            </span>
+
+            <span class="menu-item" id="about">
+                <img src="images/question-icon.png" alt="">
+                About
+            </span>
+
+            <span class="menu-item" id="solution">
+                <img src="images/solution-icon.png" alt="">
+                Solution
+            </span>
+
+            <span class="menu-item" id="resources">
+                <img src="images/research-icon.png" alt="">
+                Resources
+            </span>
+
+            <!-- Keep contact ID for existing navigation routing -->
+            <span class="menu-item active" id="contact">
+                <img src="images/try-icon.png" alt="">
+                Try Gramly
+            </span>
+
+        </nav>
+
+    </header>
+
+
+
+    <main>
+
+        <!-- =====================================================
+             INTRO
+             ===================================================== -->
+
+        <section class="try-intro">
+
+            <div class="try-intro-heading">
+
+                <div>
+
+                    <p class="try-kicker">
+                        INTERACTIVE DEMO
+                    </p>
+
+                    <h1>
+                        Build a recipe.
+                        <span>See the math.</span>
+                    </h1>
+
+                </div>
+
+
+                <div class="try-intro-description">
+
+                    <span>
+                        TRY IT YOURSELF
+                    </span>
+
+                    <p>
+                        Drag ingredients into your recipe, enter each ingredient’s
+                        Baker’s Percentage, and watch Gramly automatically
+                        calculate the required weight in grams.
+                    </p>
+
+                </div>
+
             </div>
-        </div>
 
-        <div class="basic-content">
-            <br><br><br>
-            <h1> Ask us Questions! </h1>
-            <h2> Mail: </h2>
-            <p>
-                <b> Gmail: </b> virtusiodavidrafael7.snfss@gmail.com <br>
-                <b> Yahoo: </b> davesatellitelink@yahoo.com
-            </p>
-            <br>
-            <br>
-            <br>
-        </div>
+        </section>
 
-        <hr>
 
-        <!-- Footer -->
-        <div class="basic-footer">
-            <p>
-                (C) STI LIPA 2025-2026 David Virtusio, Lance Bathan, and others.
-            </p>
-        </div>
 
-        <!-- Scripts -->
-        <script src="scripts/ui.js"></script>
-        <script>
-            addTTSPlayers();
-            addMenuScripts();
-        </script>
-    </body>
+        <!-- =====================================================
+             GRAMLY APP DEMO
+             ===================================================== -->
+
+        <section class="gramly-demo-section">
+
+            <div class="gramly-demo-app">
+
+
+                <!-- APP HEADER -->
+
+                <div class="demo-app-header">
+
+                    <div class="demo-app-brand">
+
+                        <img
+                            src="images/gramly-icon.png"
+                            alt="Gramly"
+                        >
+
+                        <div>
+                            <strong>Gramly</strong>
+                            <span>Recipe Lab</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="demo-live">
+
+                        <span></span>
+
+                        LIVE DEMO
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- APP BODY -->
+
+                <div class="demo-app-body">
+
+
+                    <!-- =================================================
+                         INGREDIENT LIBRARY
+                         ================================================= -->
+
+                    <aside class="ingredient-library">
+
+                        <div class="demo-panel-heading">
+
+                            <div>
+                                <span>01</span>
+
+                                <h2>
+                                    Ingredients
+                                </h2>
+                            </div>
+
+                            <p>
+                                Drag into recipe
+                            </p>
+
+                        </div>
+
+
+                        <p class="ingredient-help">
+                            Drag an ingredient to the recipe area or
+                            click it to add.
+                        </p>
+
+
+                        <div class="ingredient-list">
+
+
+                            <div
+                                class="ingredient-card"
+                                draggable="true"
+                                data-ingredient="Water"
+                                data-icon="💧"
+                                data-percentage="65"
+                            >
+                                <span class="ingredient-emoji">
+                                    💧
+                                </span>
+
+                                <div>
+                                    <strong>Water</strong>
+                                    <small>Liquid</small>
+                                </div>
+
+                                <span class="drag-handle">
+                                    ⠿
+                                </span>
+                            </div>
+
+
+                            <div
+                                class="ingredient-card"
+                                draggable="true"
+                                data-ingredient="Sugar"
+                                data-icon="🍚"
+                                data-percentage="10"
+                            >
+                                <span class="ingredient-emoji">
+                                    🍚
+                                </span>
+
+                                <div>
+                                    <strong>Sugar</strong>
+                                    <small>Sweetener</small>
+                                </div>
+
+                                <span class="drag-handle">
+                                    ⠿
+                                </span>
+                            </div>
+
+
+                            <div
+                                class="ingredient-card"
+                                draggable="true"
+                                data-ingredient="Butter"
+                                data-icon="🧈"
+                                data-percentage="8"
+                            >
+                                <span class="ingredient-emoji">
+                                    🧈
+                                </span>
+
+                                <div>
+                                    <strong>Butter</strong>
+                                    <small>Fat</small>
+                                </div>
+
+                                <span class="drag-handle">
+                                    ⠿
+                                </span>
+                            </div>
+
+
+                            <div
+                                class="ingredient-card"
+                                draggable="true"
+                                data-ingredient="Milk"
+                                data-icon="🥛"
+                                data-percentage="20"
+                            >
+                                <span class="ingredient-emoji">
+                                    🥛
+                                </span>
+
+                                <div>
+                                    <strong>Milk</strong>
+                                    <small>Liquid</small>
+                                </div>
+
+                                <span class="drag-handle">
+                                    ⠿
+                                </span>
+                            </div>
+
+
+                            <div
+                                class="ingredient-card"
+                                draggable="true"
+                                data-ingredient="Egg"
+                                data-icon="🥚"
+                                data-percentage="10"
+                            >
+                                <span class="ingredient-emoji">
+                                    🥚
+                                </span>
+
+                                <div>
+                                    <strong>Egg</strong>
+                                    <small>Protein</small>
+                                </div>
+
+                                <span class="drag-handle">
+                                    ⠿
+                                </span>
+                            </div>
+
+
+                            <div
+                                class="ingredient-card"
+                                draggable="true"
+                                data-ingredient="Salt"
+                                data-icon="🧂"
+                                data-percentage="2"
+                            >
+                                <span class="ingredient-emoji">
+                                    🧂
+                                </span>
+
+                                <div>
+                                    <strong>Salt</strong>
+                                    <small>Seasoning</small>
+                                </div>
+
+                                <span class="drag-handle">
+                                    ⠿
+                                </span>
+                            </div>
+
+
+                            <div
+                                class="ingredient-card"
+                                draggable="true"
+                                data-ingredient="Yeast"
+                                data-icon="🟤"
+                                data-percentage="1.4"
+                            >
+                                <span class="ingredient-emoji">
+                                    🟤
+                                </span>
+
+                                <div>
+                                    <strong>Yeast</strong>
+                                    <small>Leavening</small>
+                                </div>
+
+                                <span class="drag-handle">
+                                    ⠿
+                                </span>
+                            </div>
+
+
+                        </div>
+
+                    </aside>
+
+
+
+                    <!-- =================================================
+                         RECIPE BUILDER
+                         ================================================= -->
+
+                    <section class="recipe-builder">
+
+                        <div class="demo-panel-heading">
+
+                            <div>
+                                <span>02</span>
+
+                                <h2>
+                                    My Recipe
+                                </h2>
+                            </div>
+
+                            <button
+                                class="reset-recipe"
+                                id="reset-recipe"
+                                type="button"
+                            >
+                                Reset
+                            </button>
+
+                        </div>
+
+
+
+                        <div class="recipe-name">
+
+                            <span>
+                                RECIPE
+                            </span>
+
+                            <strong>
+                                Basic Bread Formula
+                            </strong>
+
+                        </div>
+
+
+
+                        <!-- COLUMN LABELS -->
+
+                        <div class="recipe-columns">
+
+                            <span>INGREDIENT</span>
+                            <span>GRAMS</span>
+                            <span>BAKER'S %</span>
+                            <span></span>
+
+                        </div>
+
+
+
+                        <!-- DROP ZONE -->
+
+                        <div
+                            class="recipe-drop-zone"
+                            id="recipe-drop-zone"
+                        >
+
+
+                            <!-- FLOUR ALWAYS STARTS AT 100% -->
+
+                            <div
+                                class="recipe-ingredient flour-row"
+                                data-name="Bread Flour"
+                            >
+
+                                <div class="recipe-ingredient-name">
+
+                                    <span>
+                                        🌾
+                                    </span>
+
+                                    <div>
+                                        <strong>
+                                            Bread Flour
+                                        </strong>
+
+                                        <small>
+                                            Base ingredient
+                                        </small>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="weight-control">
+
+                                    <input
+                                        type="number"
+                                        id="flour-weight"
+                                        value="500"
+                                        min="1"
+                                        step="1"
+                                        aria-label="Bread Flour weight in grams"
+                                    >
+
+                                    <span>g</span>
+
+                                </div>
+
+
+                                <div class="percentage-control locked-percentage">
+                                    <strong>100%</strong>
+                                </div>
+
+
+                                <span class="locked-ingredient">
+                                    🔒
+                                </span>
+
+                            </div>
+
+
+
+                            <!-- DEFAULT WATER -->
+
+                            <div
+                                class="recipe-ingredient"
+                                data-name="Water"
+                            >
+
+                                <div class="recipe-ingredient-name">
+
+                                    <span>
+                                        💧
+                                    </span>
+
+                                    <div>
+                                        <strong>Water</strong>
+                                        <small>Liquid</small>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="gram-output">
+                                    <strong class="ingredient-grams">325</strong>
+                                    <span>g</span>
+                                </div>
+
+
+                                <div class="percentage-control">
+                                    <input
+                                        type="number"
+                                        class="ingredient-percentage"
+                                        value="65"
+                                        min="0"
+                                        step="0.1"
+                                        aria-label="Water Baker's Percentage"
+                                    >
+                                    <span>%</span>
+                                </div>
+
+
+                                <button
+                                    class="remove-ingredient"
+                                    type="button"
+                                    aria-label="Remove Water"
+                                >
+                                    ×
+                                </button>
+
+                            </div>
+
+
+
+                            <div
+                                class="recipe-empty-message"
+                                id="recipe-empty-message"
+                            >
+                                <div>
+                                    ↓
+                                </div>
+
+                                <strong>
+                                    Drop ingredients here
+                                </strong>
+
+                                <span>
+                                    Enter a Baker’s Percentage and Gramly will
+                                    calculate the grams automatically.
+                                </span>
+                            </div>
+
+                        </div>
+
+                    </section>
+
+
+
+                    <!-- =================================================
+                         CALCULATIONS
+                         ================================================= -->
+
+                    <aside class="recipe-calculations">
+
+                        <div class="demo-panel-heading">
+
+                            <div>
+                                <span>03</span>
+
+                                <h2>
+                                    Formula
+                                </h2>
+                            </div>
+
+                        </div>
+
+
+                        <!-- MAIN RESULT -->
+
+                        <div class="formula-display">
+
+                            <p>
+                                INGREDIENT WEIGHT
+                            </p>
+
+                            <div class="formula-equation">
+
+                                <span>
+                                    Flour Weight × Baker's %
+                                </span>
+
+                                <div></div>
+
+                                <span>
+                                    100
+                                </span>
+
+                                <strong>
+                                    = Ingredient Weight
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- STATS -->
+
+                        <div class="recipe-stats">
+
+                            <article>
+
+                                <span>
+                                    TOTAL WEIGHT
+                                </span>
+
+                                <strong id="total-weight">
+                                    825g
+                                </strong>
+
+                            </article>
+
+
+                            <article>
+
+                                <span>
+                                    FLOUR
+                                </span>
+
+                                <strong id="flour-weight-display">
+                                    500g
+                                </strong>
+
+                            </article>
+
+
+                            <article>
+
+                                <span>
+                                    INGREDIENTS
+                                </span>
+
+                                <strong id="ingredient-count">
+                                    2
+                                </strong>
+
+                            </article>
+
+                        </div>
+
+
+
+                        <!-- EXAMPLE CALCULATION -->
+
+                        <div
+                            class="live-calculation"
+                            id="live-calculation"
+                        >
+
+                            <span>
+                                LIVE CALCULATION
+                            </span>
+
+                            <p id="calculation-text">
+                                500g × 65% ÷ 100
+                            </p>
+
+                            <strong id="calculation-result">
+                                325g Water
+                            </strong>
+
+                        </div>
+
+
+                        <p class="demo-tip">
+                            💡 Change an ingredient percentage or the flour weight and
+                            Gramly recalculates the grams instantly.
+                        </p>
+
+                    </aside>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             EXPLANATION
+             ===================================================== -->
+
+        <section class="try-explanation">
+
+            <div>
+
+                <p class="try-kicker">
+                    HOW IT WORKS
+                </p>
+
+                <h2>
+                    Flour is always
+                    <span>100%.</span>
+                </h2>
+
+            </div>
+
+
+            <div class="try-explanation-copy">
+
+                <p>
+                    In Baker's Percentage, the total flour weight is
+                    treated as the base value of <strong>100%</strong>.
+                    Every other ingredient is entered as a percentage of
+                    the flour, and Gramly converts that percentage into grams.
+                </p>
+
+
+                <div class="example-formula">
+
+                    <div>
+                        <span>Flour</span>
+                        <strong>500g</strong>
+                    </div>
+
+                    <span>×</span>
+
+                    <div>
+                        <span>Water</span>
+                        <strong>65%</strong>
+                    </div>
+
+                    <span>÷ 100 =</span>
+
+                    <strong class="example-result">
+                        325g
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             DOWNLOAD
+             ===================================================== -->
+
+        <section class="try-download">
+
+            <div class="try-download-background">
+                GRAMLY
+            </div>
+
+            <div class="try-download-inner">
+
+                <div>
+
+                    <p class="try-kicker">
+                        LIKE THE DEMO?
+                    </p>
+
+                    <h2>
+                        Take Gramly
+                        <span>with you.</span>
+                    </h2>
+
+                    <p>
+                        Download the Android version and explore the
+                        complete Gramly baking experience.
+                    </p>
+
+                </div>
+
+
+                <button
+                    class="try-download-button"
+                    onclick="downloadGramlyApk()"
+                    type="button"
+                >
+
+                    <img
+                        src="images/android-icon.png"
+                        alt=""
+                    >
+
+                    <span>
+                        <small>
+                            Download for
+                        </small>
+
+                        Android
+                    </span>
+
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <footer class="basic-footer">
+
+        <p>
+            © STI COLLEGE LIPA 2026–2027 ·
+            MAWD 202 – GROUP 4 · GRAMLY
+        </p>
+
+    </footer>
+
+
+
+    <script src="scripts/ui.js"></script>
+
+    <script>
+        addTTSPlayers();
+        addMenuScripts();
+        initializeGramlyDemo();
+    </script>
+
+</body>
+
 </html>

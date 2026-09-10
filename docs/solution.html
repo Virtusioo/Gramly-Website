@@ -1,57 +1,757 @@
-<html>
-    <head>
-        <title>Gramly Solution</title>
-        <link rel="stylesheet" href="stylesheets/main.css">
-        <link rel="icon" href="images/favicon.png">
-    </head>
-    <body>
-        <!-- Top bar -->
-        <div class="landing-topbar">
-            <img id="menu-icon" src="images/gramly-icon.png">
-            <div class="menu-list-items">
-                <span class="menu-item" id="home"> <img src="images/home-icon.png" width="32px"> Home  </span>
-                <span class="menu-item" id="about"> <img src="images/question-icon.png" width="32px"> About </span>
-                <span class="menu-item" id="solution"> <img src="images/solution-icon.png" width="32px"> Solution </span>
-                <span class="menu-item" id="resources"> <img src="images/research-icon.png" width="32px"> Resources </span> 
-                <span class="menu-item" id="contact"> <img src="images/contact-icon.png" width="32px"> Contact </span> 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Discover how Gramly improves baking accuracy and recipe consistency through weight-based measurements and Baker's Percentage."
+    >
+
+    <title>Gramly Solution — Precision in Every Recipe</title>
+
+    <link rel="stylesheet" href="stylesheets/main.css">
+    <link rel="icon" href="images/favicon.png">
+</head>
+
+
+<body class="solution-page">
+
+    <!-- =====================================================
+         NAVIGATION
+         ===================================================== -->
+
+    <header class="landing-topbar">
+
+        <img
+            id="menu-icon"
+            src="images/gramly-icon.png"
+            alt="Gramly logo"
+        >
+
+        <nav class="menu-list-items" aria-label="Main navigation">
+
+            <span class="menu-item" id="home">
+                <img src="images/home-icon.png" alt="">
+                Home
+            </span>
+
+            <span class="menu-item" id="about">
+                <img src="images/question-icon.png" alt="">
+                About
+            </span>
+
+            <span class="menu-item" id="solution">
+                <img src="images/solution-icon.png" alt="">
+                Solution
+            </span>
+
+            <span class="menu-item" id="resources">
+                <img src="images/research-icon.png" alt="">
+                Resources
+            </span>
+
+            <!-- Keep contact ID for existing navigation routing -->
+            <span class="menu-item" id="contact">
+                <img src="images/try-icon.png" alt="">
+                Try Gramly
+            </span>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- =====================================================
+            SOLUTION INTRO — PROBLEM / SOLUTION BOARD
+            ===================================================== -->
+
+        <section class="solution-intro">
+
+            <div class="solution-intro-label">
+                <span>02</span>
+                OUR SOLUTION
             </div>
-        </div>
-        <br><br>
-        <div class="basic-content">
-            <h1> Our Solution </h1>
-            <img src="images/weighing.png">
-            <br><br>
-            <a href="https://www.youtube.com/watch?v=lAFKQoSMbxI"> Lacopella, V, (2021). https://www.youtube.com/watch?v=lAFKQoSMbxI </a>
-            <br>
-            <p>
-                Gramly uses weight-based measurements and percentages <br>
-                to help bakers measure ingredients accurately, <br>
-                improving recipe consistency and baking results.
-            </p>
 
-            <h1> Our Beneficiaries </h1>
-            <img src="images/baking-together.jpg">
-            <p>
-                Gramly supports home bakers, baking students, <br>
-                enthusiasts, and small businesses who want more <br>
-                accurate and consistent baking results.
-            </p>
-        </div>
-        <br><br>
-        <hr>
 
-        <!-- Footer -->
-        <div class="basic-footer">
-            <p>
-                (C) STI LIPA 2025-2026 David Virtusio, Lance Bathan, and others.
-            </p>
+            <div class="solution-intro-heading">
+
+                <p>THE IDEA</p>
+
+                <h1>
+                    Baking needs precision.
+                    <span>Gramly gives you a better way to measure.</span>
+                </h1>
+
+            </div>
+
+
+            <!-- PROBLEM → SOLUTION -->
+
+            <div class="solution-compare">
+
+                <!-- PROBLEM SIDE -->
+                <div class="solution-compare-panel problem-side">
+
+                    <div class="compare-top">
+
+                        <span class="compare-number">
+                            01
+                        </span>
+
+                        <p>
+                            THE PROBLEM
+                        </p>
+
+                    </div>
+
+
+                    <h2>
+                        Volume can
+                        <em>vary.</em>
+                    </h2>
+
+
+                    <p class="compare-description">
+                        Cups and spoons can produce different amounts
+                        depending on ingredient density, packing, and
+                        measuring technique.
+                    </p>
+
+
+                    <div class="compare-example">
+
+                        <div class="compare-measure">
+                            <span>🥄</span>
+
+                            <div>
+                                <strong>1 Cup</strong>
+                                <small>Volume measurement</small>
+                            </div>
+                        </div>
+
+
+                        <div class="variation-lines">
+
+                            <span style="width: 85%;"></span>
+                            <span style="width: 62%;"></span>
+                            <span style="width: 74%;"></span>
+
+                        </div>
+
+
+                        <p>
+                            Same measurement.<br>
+                            Different possible amounts.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- CENTER TRANSITION -->
+                <div class="solution-transition">
+
+                    <div class="transition-line"></div>
+
+                    <div class="transition-icon">
+                        →
+                    </div>
+
+                    <span>
+                        GRAMLY
+                    </span>
+
+                    <div class="transition-line"></div>
+
+                </div>
+
+
+
+                <!-- SOLUTION SIDE -->
+                <div class="solution-compare-panel gramly-side">
+
+                    <div class="compare-top">
+
+                        <span class="compare-number">
+                            02
+                        </span>
+
+                        <p>
+                            THE GRAMLY WAY
+                        </p>
+
+                    </div>
+
+
+                    <h2>
+                        Weight stays
+                        <em>precise.</em>
+                    </h2>
+
+
+                    <p class="compare-description">
+                        Gramly organizes recipes around weight-based
+                        measurements and Baker's Percentage for greater
+                        accuracy and consistency.
+                    </p>
+
+
+                    <div class="gramly-measurement">
+
+                        <div class="digital-scale">
+
+                            <span class="scale-label">
+                                FLOUR
+                            </span>
+
+                            <strong>
+                                250<span>g</span>
+                            </strong>
+
+                            <div class="scale-line"></div>
+
+                            <small>
+                                Exact weight measurement
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- KEY RESULT -->
+
+            <div class="solution-intro-result">
+
+                <span class="result-label">
+                    THE RESULT
+                </span>
+
+
+                <div class="result-items">
+
+                    <div>
+                        <strong>01</strong>
+                        <p>More Accurate</p>
+                    </div>
+
+                    <span class="result-divider"></span>
+
+                    <div>
+                        <strong>02</strong>
+                        <p>Easier to Scale</p>
+                    </div>
+
+                    <span class="result-divider"></span>
+
+                    <div>
+                        <strong>03</strong>
+                        <p>More Consistent</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             THE PROBLEM
+             ===================================================== -->
+
+        <section class="solution-problem-section">
+
+            <div class="solution-section-heading">
+
+                <p class="solution-section-kicker">
+                    THE CHALLENGE
+                </p>
+
+                <h2>
+                    Small differences can create
+                    <span>big changes.</span>
+                </h2>
+
+                <p>
+                    Traditional volume measurements can vary depending
+                    on ingredient density, packing, and measuring
+                    technique. In baking, those small variations may
+                    affect the final result.
+                </p>
+
+            </div>
+
+
+            <div class="problem-grid">
+
+                <article class="problem-card">
+
+                    <span class="problem-number">
+                        01
+                    </span>
+
+                    <div class="problem-icon">
+                        🥄
+                    </div>
+
+                    <h3>
+                        Inconsistent Volume
+                    </h3>
+
+                    <p>
+                        A cup of an ingredient may contain a different
+                        amount depending on how it was scooped or packed.
+                    </p>
+
+                </article>
+
+
+                <article class="problem-card">
+
+                    <span class="problem-number">
+                        02
+                    </span>
+
+                    <div class="problem-icon">
+                        📏
+                    </div>
+
+                    <h3>
+                        Harder to Scale
+                    </h3>
+
+                    <p>
+                        Increasing or decreasing a recipe can become
+                        confusing when measurements are based only on
+                        cups and spoons.
+                    </p>
+
+                </article>
+
+
+                <article class="problem-card">
+
+                    <span class="problem-number">
+                        03
+                    </span>
+
+                    <div class="problem-icon">
+                        🧁
+                    </div>
+
+                    <h3>
+                        Unpredictable Results
+                    </h3>
+
+                    <p>
+                        Measurement differences can affect texture,
+                        structure, and overall consistency from one
+                        bake to another.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             GRAMLY SOLUTION
+             ===================================================== -->
+
+        <section class="solution-main-section">
+
+        <div class="solution-showcase">
+
+            <div class="solution-image-panel">
+
+                <div class="solution-image-number">
+                    01
+                </div>
+
+                <video
+                    class="solution-video"
+                    autoplay
+                    muted
+                    loop
+                    playsinline
+                    controls
+                >
+                    <source src="images/poolish.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+            </div>
+
+
+            <div class="solution-showcase-copy">
+
+                <p class="solution-section-kicker">
+                    PRECISION
+                </p>
+
+                <h2>
+                    Measure by weight.
+                    <span>Bake with confidence.</span>
+                </h2>
+
+                <p>
+                    Gramly uses weight-based measurements and
+                    percentages to help bakers measure ingredients
+                    more accurately, improving recipe consistency
+                    and baking results.
+                </p>
+
+
+                <div class="solution-benefits">
+
+                    <div>
+                        <span>✓</span>
+
+                        <p>
+                            More precise ingredient measurements
+                        </p>
+                    </div>
+
+                    <div>
+                        <span>✓</span>
+
+                        <p>
+                            Easier recipe scaling
+                        </p>
+                    </div>
+
+                    <div>
+                        <span>✓</span>
+
+                        <p>
+                            More repeatable baking results
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <a
+                    class="solution-reference"
+                    href="https://www.youtube.com/watch?v=lAFKQoSMbxI"
+                    target="_blank"
+                    rel="noopener"
+                >
+                    Lacopella, V. (2021) — Reference Video
+                    <span>↗</span>
+                </a>
+
+            </div>
+
         </div>
 
-        <!-- Scripts -->
-        <script src="scripts/ui.js"></script>
-        <script>
-            addTTSPlayers();
-            addMenuScripts();
-        </script>
-    </body>
+    </section>
+
+
+
+        <!-- =====================================================
+             HOW IT WORKS
+             ===================================================== -->
+
+        <section class="solution-process-section">
+
+            <div class="solution-section-heading dark-heading">
+
+                <p class="solution-section-kicker">
+                    HOW IT WORKS
+                </p>
+
+                <h2>
+                    From ingredients to
+                    <span>better results.</span>
+                </h2>
+
+                <p>
+                    Gramly turns accurate measurements into a simple,
+                    organized recipe workflow.
+                </p>
+
+            </div>
+
+
+            <div class="solution-process-grid">
+
+
+                <article class="process-card">
+
+                    <span class="process-number">
+                        01
+                    </span>
+
+                    <div class="process-icon">
+                        ⚖️
+                    </div>
+
+                    <h3>
+                        Measure
+                    </h3>
+
+                    <p>
+                        Record ingredients using accurate
+                        weight-based units.
+                    </p>
+
+                </article>
+
+
+                <div class="process-arrow">
+                    →
+                </div>
+
+
+                <article class="process-card">
+
+                    <span class="process-number">
+                        02
+                    </span>
+
+                    <div class="process-icon">
+                        %
+                    </div>
+
+                    <h3>
+                        Calculate
+                    </h3>
+
+                    <p>
+                        Understand ingredient ratios using
+                        Baker's Percentage.
+                    </p>
+
+                </article>
+
+
+                <div class="process-arrow">
+                    →
+                </div>
+
+
+                <article class="process-card">
+
+                    <span class="process-number">
+                        03
+                    </span>
+
+                    <div class="process-icon">
+                        📖
+                    </div>
+
+                    <h3>
+                        Organize
+                    </h3>
+
+                    <p>
+                        Build recipes with structured ingredient
+                        measurements.
+                    </p>
+
+                </article>
+
+
+                <div class="process-arrow">
+                    →
+                </div>
+
+
+                <article class="process-card">
+
+                    <span class="process-number">
+                        04
+                    </span>
+
+                    <div class="process-icon">
+                        🥐
+                    </div>
+
+                    <h3>
+                        Bake
+                    </h3>
+
+                    <p>
+                        Follow a more consistent recipe and achieve
+                        more dependable results.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             BENEFICIARIES
+             ===================================================== -->
+
+        <section class="solution-beneficiaries-section">
+
+            <div class="beneficiary-layout">
+
+                <div class="beneficiary-copy">
+
+                    <p class="solution-section-kicker">
+                        WHO IT HELPS
+                    </p>
+
+                    <h2>
+                        Made for anyone who
+                        <span>loves to bake.</span>
+                    </h2>
+
+                    <p>
+                        Gramly supports home bakers, baking students,
+                        enthusiasts, and small businesses who want more
+                        accurate and consistent baking results.
+                    </p>
+
+
+                    <div class="beneficiary-list">
+
+                        <div>
+                            <span>01</span>
+
+                            <p>Home Bakers</p>
+                        </div>
+
+                        <div>
+                            <span>02</span>
+
+                            <p>Baking Students</p>
+                        </div>
+
+                        <div>
+                            <span>03</span>
+
+                            <p>Baking Enthusiasts</p>
+                        </div>
+
+                        <div>
+                            <span>04</span>
+
+                            <p>Small Businesses</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="beneficiary-image-wrap">
+
+                    <div class="beneficiary-bg-text">
+                        BAKE
+                    </div>
+
+                    <img
+                        src="images/baking-together.jpg"
+                        alt="People baking together"
+                    >
+
+                    <div class="beneficiary-badge">
+
+                        <strong>
+                            Made for
+                        </strong>
+
+                        <span>
+                            everyday bakers
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             FINAL CTA
+             ===================================================== -->
+
+        <section class="solution-final-cta">
+
+            <div>
+
+                <p class="solution-section-kicker">
+                    LEARN MORE
+                </p>
+
+                <h2>
+                    Precision starts with
+                    <span>better measurement.</span>
+                </h2>
+
+                <p>
+                    Learn more about Gramly's features, research,
+                    and approach to smarter baking.
+                </p>
+
+            </div>
+
+
+            <button
+                class="solution-cta-button"
+                onclick="window.location.href='about.html'"
+            >
+                Discover Gramly
+
+                <span>→</span>
+            </button>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =====================================================
+         FOOTER
+         ===================================================== -->
+
+    <footer class="basic-footer">
+
+        <p>
+            © STI COLLEGE LIPA 2026–2027 ·
+            MAWD 202 – GROUP 4 · GRAMLY
+        </p>
+
+    </footer>
+
+
+
+    <script src="scripts/ui.js"></script>
+
+    <script>
+        addTTSPlayers();
+        addMenuScripts();
+    </script>
+
+</body>
+
 </html>

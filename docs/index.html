@@ -3,99 +3,172 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Gramly is a baking companion for accurate weight-based measurements, recipe creation, and sharing.">
-    <title>Gramly — Measure Baking the Right Way</title>
+
+    <meta
+        name="description"
+        content="Gramly is a baking companion built around accurate weight-based measurements."
+    >
+
+    <title>Gramly — Measure Better. Bake Better.</title>
+
     <link rel="stylesheet" href="stylesheets/main.css">
     <link rel="icon" href="images/favicon.png">
 </head>
-<body>
+
+<body class="home-page">
+
+    <!-- NAVIGATION -->
     <header class="landing-topbar">
-        <img id="menu-icon" src="images/gramly-icon.png" alt="Gramly logo">
+
+        <img
+            id="menu-icon"
+            src="images/gramly-icon.png"
+            alt="Gramly logo"
+        >
+
         <nav class="menu-list-items" aria-label="Main navigation">
-            <span class="menu-item" id="home"><img src="images/home-icon.png" alt="">Home</span>
-            <span class="menu-item" id="about"><img src="images/question-icon.png" alt="">About</span>
-            <span class="menu-item" id="solution"><img src="images/solution-icon.png" alt="">Solution</span>
-            <span class="menu-item" id="resources"><img src="images/research-icon.png" alt="">Resources</span>
-            <span class="menu-item" id="contact"><img src="images/contact-icon.png" alt="">Contact</span>
+
+            <span class="menu-item" id="home">
+                <img src="images/home-icon.png" alt="">
+                Home
+            </span>
+
+            <span class="menu-item" id="about">
+                <img src="images/question-icon.png" alt="">
+                About
+            </span>
+
+            <span class="menu-item" id="solution">
+                <img src="images/solution-icon.png" alt="">
+                Solution
+            </span>
+
+            <span class="menu-item" id="resources">
+                <img src="images/research-icon.png" alt="">
+                Resources
+            </span>
+
+            <!-- Keep contact ID for existing navigation routing -->
+            <span class="menu-item" id="contact">
+                <img src="images/try-icon.png" alt="">
+                Try Gramly
+            </span>
+
         </nav>
+
     </header>
-    
-    <main>
-        <section class="home-section">
-            <div class="hero-content">
-                <p class="eyebrow">Baking, measured better</p>
-                <h1>Your reliable measuring app for baking.</h1>
-                <p>Measure it the right way with weight-based ingredient measurements designed for more accurate, consistent baking.</p>
 
-                <div class="download-section">
-                    <div class="button-item" role="button" tabindex="0" onclick="downloadGramlyApk()" onkeydown="if(event.key==='Enter'||event.key===' ') downloadGramlyApk()">
-                        <p>Download the Android App</p>
-                        <img class="landing-button-icons" src="images/android-icon.png" alt="Android">
-                    </div>
-                    <img id="gramly-laying-seductive" src="images/gramly-laying-seductive.png" alt="Gramly mascot">
+    <!-- SINGLE SCREEN HERO -->
+    <main class="home-hero">
+
+        <div class="home-hero-content">
+
+            <!-- LEFT SIDE -->
+            <div class="home-hero-copy">
+
+                <p class="home-eyebrow">
+                    BAKING MADE PRECISE
+                </p>
+
+                <h1>
+                    Measure Better.
+                    <span>Bake Better.</span>
+                </h1>
+
+                <p class="home-description">
+                    Gramly makes baking simpler with accurate
+                    <strong>weight-based measurements</strong>,
+                    smarter recipe organization, and easier scaling.
+                </p>
+
+
+                <div class="home-pills">
+
+                    <span>⚖️ Accurate</span>
+                    <span>🥐 Simple</span>
+                    <span>📖 Consistent</span>
+
                 </div>
+
+
+                <!-- BUTTONS -->
+                <div class="home-actions">
+
+                    <button
+                        class="home-download-btn"
+                        onclick="downloadGramlyApk()"
+                    >
+                        <img
+                            src="images/android-icon.png"
+                            alt=""
+                        >
+
+                        <span>
+                            <small>Download for</small>
+                            Android
+                        </span>
+                    </button>
+
+
+                    <button
+                        class="home-about-btn"
+                        onclick="window.location.href='about.html'"
+                    >
+                        Discover Gramly
+                        <span>→</span>
+                    </button>
+
+                </div>
+
+
+                <p class="home-note">
+                    Created by students. Designed for bakers.
+                </p>
+
             </div>
-        </section>
 
-        <section class="features-section">
-            <p class="section-kicker">Made for everyday bakers</p>
-            <h1>What’s special about Gramly?</h1>
-            <p class="section-lead">A simpler way to build, measure, and share recipes without relying on inconsistent volume measurements.</p>
 
-            <div class="features-item">
-                <img src="images/gramly-phone.png" alt="Gramly mobile application displayed on a phone">
+            <!-- RIGHT SIDE -->
+            <div class="home-hero-visual">
 
-                <div class="features-list">
-                    <div class="feature">
-                        <span class="feature-number">01</span>
-                        <div>
-                            <h2>Weight-Based Measurement</h2>
-                            <p>Measure ingredients accurately using weight-based units.</p>
-                        </div>
-                    </div>
+                <div class="phone-glow"></div>
 
-                    <div class="feature">
-                        <span class="feature-number">02</span>
-                        <div>
-                            <h2>Huge Ingredient Database</h2>
-                            <p>Access a wide range of ingredient information.</p>
-                        </div>
-                    </div>
+                <img
+                    class="home-phone"
+                    src="images/gramly-laying-seductive.png"
+                    alt="Gramly mobile application"
+                >
 
-                    <div class="feature">
-                        <span class="feature-number">03</span>
-                        <div>
-                            <h2>Recipe Creation</h2>
-                            <p>Create and customize your own baking recipes.</p>
-                        </div>
-                    </div>
-
-                    <div class="feature">
-                        <span class="feature-number">04</span>
-                        <div>
-                            <h2>Recipe Publishing</h2>
-                            <p>Share your recipes with other Gramly users.</p>
-                        </div>
+                <div class="floating-card floating-card-one">
+                    <span>⚖️</span>
+                    <div>
+                        <strong>Weight Based</strong>
+                        <small>More precise recipes</small>
                     </div>
                 </div>
-            </div>
-        </section>
 
-        <section class="home-news">
-            <p class="section-kicker">Why Gramly</p>
-            <h1>A mobile baking companion built around consistency.</h1>
-            <p>Gramly helps users create, measure, and share recipes using accurate weight-based ingredient measurements for more consistent baking results.</p>
-        </section>
+
+                <div class="floating-card floating-card-two">
+                    <span>✓</span>
+                    <div>
+                        <strong>Consistent</strong>
+                        <small>Better results</small>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
     </main>
 
-    <footer class="basic-footer"><p>© STI COLLEGE LIPA 2026–2027 · MAWD 202 – GROUP 4 · GRAMLY</p></footer>
 
     <script src="scripts/ui.js"></script>
+
     <script>
         addMenuScripts();
         addTTSPlayers();
-        addAliceWalking();
-        addParallaxEffect();
     </script>
+
 </body>
 </html>
